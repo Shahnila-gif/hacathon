@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .nav-bar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    button {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .list {
+        font-size: 14px;
+    }
+
+    ul {
+        gap: 5px;
+    }
+}
+/* .sub-header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin: auto;
+    width: 80%;
+    height: 100hv;
+    margin-top: 80px;
+}
+.menu h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+}
+.menu p{
+margin-top: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu button{
+    margin-top: 30px;
+    width: 200px;
+    background-color: black;
+    color: white;
+} */
+
+/* General Styles */
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    margin-top: 80px;
+}
+
+.menu h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.0rem;
+}
+
+.menu p {
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.menu button {
+    margin-top: 30px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #333;
+}
+
+
+
+@media (max-width: 480px) {
+    .sub-header {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .menu p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .menu button {
+        width: 160px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.main-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100hv;
+    margin: auto;
+
+    
+}
+.main-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-images div {
+    margin: 10px;
+}
+
+.main-images img {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (max-width: 320px) {
+    .main-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-images img {
+        width: 80px;
+        height: auto;
+    }
+
+    .logo2 img {
+        width: 200px;
+        height: 80px;
+    }
+}
